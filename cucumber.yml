@@ -1,0 +1,2 @@
+smoke_test: --tags @smoke_test --format progress --format html --out=./report/report.html
+full_features: --tags ~@wip --tags ~@time_sensitive_after_4pm --format progress --format html --out=./report/report.html
