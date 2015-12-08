@@ -18,7 +18,7 @@ module Report
 
   def sendReport
 
-    @email_config = YAML.load(File.open(File.dirname(__FILE__) +  '/../config/email.yml'))
+    @email_config = YAML.load(File.open(File.dirname(__FILE__) + '/../config/email.yml'))
     mail = MailFactory.new()
     mail.to = @email_config["to"].split.join(",")
     mail.from = @email_config["from"]
